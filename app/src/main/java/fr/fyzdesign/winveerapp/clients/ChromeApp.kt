@@ -1,13 +1,13 @@
-package fr.fyzdesign.winveerapp
+package fr.fyzdesign.winveerapp.clients
 
-import android.app.Activity
 import android.content.Intent
 import android.net.Uri
 import android.webkit.ValueCallback
 import android.webkit.WebChromeClient
 import android.webkit.WebView
+import fr.fyzdesign.winveerapp.MainActivity
 
-class ChromeApp (val winActivity : MainActivity) : WebChromeClient() {
+class ChromeApp (private val winActivity : MainActivity) : WebChromeClient() {
 
     override fun onShowFileChooser(
         webView: WebView?,
